@@ -28,7 +28,7 @@
 - There are two ways to work with imperative initialization:
 ```
 <script>  
-    require([“jquery”], function($){
+    require(["jquery"], function($){
         /*code here*/ 
     });
 </script>
@@ -36,7 +36,7 @@
 - It is possible to load the **jQuery library** to the function **in the template** with this call.
 ```
 <script>
-    require([“Magento_Sales/order/create/form”], function(){
+    require(["Magento_Sales/order/create/form"], function(){
         /*code here*/
     });
 </script>
@@ -53,7 +53,7 @@
 - This method can only be implemented on the **specified HTML tag**. For example,  
     `<nav data-mage-init='{ "<component_name>": {...} }'></nav>`
 - This is preferred for its **concise syntax**, and **direct access to the HTML element**.
-##### Using the `<script type=”text/x-magento-init”>...</script>` tag
+##### Using the `<script type="text/x-magento-init">...</script>` tag
 - This is used to target either a `CSS selector` or `*`.
 - If the `CSS selector` matches **multiple HTML elements**, the script will run for **each matched HTML element**.
 - For `*`, no HTML element is selected and the script will run **once with the HTML DOM as its target**.
@@ -61,12 +61,12 @@
 ```
 <script type=”text/x-magento-init”>
     {
-        “#main-container”: {
-            “navigation”: <?php echo $block->getNavigationConfig(); ?>,
-            “accordion”:  <?php echo $block->getNavigationAccordionConfig(); ?>
+        "#main-container": {
+            "navigation": <?php echo $block->getNavigationConfig(); ?>,
+            "accordion":  <?php echo $block->getNavigationAccordionConfig(); ?>
         },
         “*”: {
-            “pageCache”: <?php echo $block->getPageCacheConfig(); ?>
+            "pageCache": <?php echo $block->getPageCacheConfig(); ?>
         }
     }
 </script>
