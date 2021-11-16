@@ -51,7 +51,7 @@
 - This is used to **target a specific HTML element**.
 - It is easier to implement and is commonly used for **jQuery UI widgets**.
 - This method can only be implemented on the **specified HTML tag**. For example,  
-    `<nav data-mage-init=’{ “<component_name>”: {...} }’></nav>`
+    `<nav data-mage-init='{ "<component_name>": {...} }'></nav>`
 - This is preferred for its **concise syntax**, and **direct access to the HTML element**.
 ##### Using the `<script type=”text/x-magento-init”>...</script>` tag
 - This is used to target either a `CSS selector` or `*`.
