@@ -59,7 +59,7 @@
 - For `*`, no HTML element is selected and the script will run **once with the HTML DOM as its target**.
 - This is preferred when **direct access to the HTML element is restricted**, or when there is **no target HTML element**. For example,
 ```
-<script type=”text/x-magento-init”>
+<script type="text/x-magento-init">
     {
         "#main-container": {
             "navigation": <?php echo $block->getNavigationConfig(); ?>,
