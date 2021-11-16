@@ -65,7 +65,7 @@
             "navigation": <?php echo $block->getNavigationConfig(); ?>,
             "accordion":  <?php echo $block->getNavigationAccordionConfig(); ?>
         },
-        “*”: {
+        "*": {
             "pageCache": <?php echo $block->getPageCacheConfig(); ?>
         }
     }
