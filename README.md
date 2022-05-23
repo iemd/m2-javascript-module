@@ -24,7 +24,7 @@
 - There are **two ways to initialize** a **JavaScript component** on the **template**:
 #### 1. Imperative Initialization:
 - Use imperative initialization in the **PHTML template** to include **raw JavaScript code** on the pages to execute specified business logic.
-- This method uses the `<script>` tag without the `type=”text/x-magento-init”` attribute.
+- This method uses the `<script>` tag without the `type="text/x-magento-init"` attribute.
 - There are two ways to work with imperative initialization:
 ```
 <script>  
